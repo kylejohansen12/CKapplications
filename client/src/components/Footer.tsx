@@ -144,12 +144,12 @@ export default function Footer() {
                 (831) 588-1034
               </a>
               <a
-                href="mailto:info@triangleprowash.com"
+                href="mailto:info@ckapplications.com"
                 className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity"
                 style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
               >
                 <Mail size={13} />
-                info@triangleprowash.com
+                info@ckapplications.com
               </a>
               <div
                 className="flex items-start gap-2 text-sm"
