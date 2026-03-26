@@ -86,14 +86,15 @@ export default function Navbar() {
           className="flex items-center gap-3 group"
         >
           <div
-            className="w-10 h-10 rounded flex items-center justify-center font-bold text-lg"
+            className="w-10 h-10 rounded flex items-center justify-center font-bold text-sm"
             style={{
               backgroundColor: "oklch(0.72 0.16 70)",
               color: "oklch(0.15 0.02 255)",
               fontFamily: "Oswald, sans-serif",
+              letterSpacing: "-0.05em",
             }}
           >
-            C
+            CK
           </div>
           <div className="text-left">
             <div
