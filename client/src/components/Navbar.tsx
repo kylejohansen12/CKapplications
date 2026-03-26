@@ -1,6 +1,6 @@
 /**
- * Navbar — Rugged Americana / Blue-Collar Premium
- * Forest green background, amber accent, Oswald typography
+ * Navbar — C&K Applications
+ * Deep blue background, gold accent, Oswald typography
  * Sticky with scroll-aware shadow, mobile hamburger menu
  */
 import { useState, useEffect } from "react";
@@ -57,16 +57,14 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "shadow-xl"
-          : ""
+        scrolled ? "shadow-xl" : ""
       }`}
-      style={{ backgroundColor: "oklch(0.20 0.08 155)" }}
+      style={{ backgroundColor: "oklch(0.28 0.12 260)" }}
     >
       {/* Top bar */}
       <div
         className="hidden md:flex items-center justify-end px-6 py-1.5 text-sm"
-        style={{ backgroundColor: "oklch(0.15 0.06 155)", color: "oklch(0.80 0.05 80)" }}
+        style={{ backgroundColor: "oklch(0.18 0.12 260)", color: "oklch(0.85 0.05 0)" }}
       >
         <a
           href="tel:+19195550100"
@@ -90,31 +88,31 @@ export default function Navbar() {
           <div
             className="w-10 h-10 rounded flex items-center justify-center font-bold text-lg"
             style={{
-              backgroundColor: "oklch(0.68 0.18 65)",
+              backgroundColor: "oklch(0.72 0.16 70)",
               color: "oklch(0.15 0.02 255)",
               fontFamily: "Oswald, sans-serif",
             }}
           >
-            T
+            C
           </div>
           <div className="text-left">
             <div
               className="text-white font-bold leading-tight"
               style={{ fontFamily: "Oswald, sans-serif", fontSize: "1.1rem", letterSpacing: "0.05em" }}
             >
-              TRIANGLE PRO WASH
+              C&K APPLICATIONS
             </div>
             <div
               className="leading-tight"
               style={{
                 fontFamily: "Inter, sans-serif",
                 fontSize: "0.65rem",
-                color: "oklch(0.68 0.18 65)",
+                color: "oklch(0.72 0.16 70)",
                 letterSpacing: "0.12em",
                 textTransform: "uppercase",
               }}
             >
-              & Roof Coatings
+              Pressure Washing & Coatings
             </div>
           </div>
         </button>
@@ -139,7 +137,7 @@ export default function Navbar() {
                 {openDropdown === link.label && (
                   <div
                     className="absolute top-full left-0 min-w-48 rounded shadow-2xl py-1 z-50"
-                    style={{ backgroundColor: "oklch(0.20 0.08 155)", border: "1px solid oklch(0.35 0.08 155)" }}
+                    style={{ backgroundColor: "oklch(0.28 0.12 260)", border: "1px solid oklch(0.40 0.12 260)" }}
                   >
                     {link.children.map((child) => (
                       <button
@@ -169,7 +167,7 @@ export default function Navbar() {
             onClick={() => handleNavClick("#contact")}
             className="ml-3 px-5 py-2 rounded font-semibold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5"
             style={{
-              backgroundColor: "oklch(0.68 0.18 65)",
+              backgroundColor: "oklch(0.72 0.16 70)",
               color: "oklch(0.15 0.02 255)",
               fontFamily: "Oswald, sans-serif",
               letterSpacing: "0.08em",
@@ -194,7 +192,7 @@ export default function Navbar() {
       {isOpen && (
         <div
           className="lg:hidden border-t"
-          style={{ backgroundColor: "oklch(0.18 0.08 155)", borderColor: "oklch(0.35 0.08 155)" }}
+          style={{ backgroundColor: "oklch(0.20 0.12 260)", borderColor: "oklch(0.40 0.12 260)" }}
         >
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => (
@@ -227,7 +225,7 @@ export default function Navbar() {
                 onClick={() => handleNavClick("#contact")}
                 className="w-full py-3 rounded font-semibold text-sm"
                 style={{
-                  backgroundColor: "oklch(0.68 0.18 65)",
+                  backgroundColor: "oklch(0.72 0.16 70)",
                   color: "oklch(0.15 0.02 255)",
                   fontFamily: "Oswald, sans-serif",
                   letterSpacing: "0.08em",
@@ -239,7 +237,7 @@ export default function Navbar() {
             </div>
             <div
               className="flex items-center gap-2 px-3 py-2 text-sm"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Inter, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
             >
               <Phone size={14} />
               <a href="tel:+19195550100">(919) 555-0100</a>

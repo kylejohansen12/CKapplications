@@ -71,10 +71,10 @@ export default function ContactSection() {
           className={`mb-12 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.68 0.18 65)" }} />
+            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               Get in Touch
             </span>
@@ -99,7 +99,7 @@ export default function ContactSection() {
           {/* Left sidebar — contact info */}
           <div
             className="lg:col-span-2 p-8 lg:p-10 flex flex-col justify-between"
-            style={{ backgroundColor: "oklch(0.28 0.08 155)" }}
+            style={{ backgroundColor: "oklch(0.28 0.12 260)" }}
           >
             <div>
               <h3
@@ -143,7 +143,7 @@ export default function ContactSection() {
             </div>
 
             {/* Trust badges */}
-            <div className="mt-10 pt-8" style={{ borderTop: "1px solid oklch(0.38 0.08 155)" }}>
+            <div className="mt-10 pt-8" style={{ borderTop: "1px solid oklch(0.40 0.12 260)" }}>
               <p
                 className="text-xs uppercase tracking-widest mb-4"
                 style={{ color: "oklch(0.60 0.03 80)", fontFamily: "Oswald, sans-serif" }}
@@ -158,7 +158,7 @@ export default function ContactSection() {
                   "1,000+ Satisfied Customers",
                 ].map((badge) => (
                   <div key={badge} className="flex items-center gap-2">
-                    <CheckCircle2 size={14} style={{ color: "oklch(0.68 0.18 65)", flexShrink: 0 }} />
+                    <CheckCircle2 size={14} style={{ color: "oklch(0.72 0.16 70)", flexShrink: 0 }} />
                     <span
                       className="text-sm"
                       style={{ color: "oklch(0.80 0.03 80)", fontFamily: "Inter, sans-serif" }}
@@ -179,7 +179,7 @@ export default function ContactSection() {
                   className="w-16 h-16 rounded-full flex items-center justify-center mb-5"
                   style={{ backgroundColor: "oklch(0.28 0.08 155 / 0.1)" }}
                 >
-                  <CheckCircle2 size={32} style={{ color: "oklch(0.28 0.08 155)" }} />
+                  <CheckCircle2 size={32} style={{ color: "oklch(0.28 0.12 260)" }} />
                 </div>
                 <h3
                   className="font-bold mb-3"
@@ -197,7 +197,7 @@ export default function ContactSection() {
                 <button
                   onClick={() => setSubmitted(false)}
                   className="mt-6 text-sm underline"
-                  style={{ color: "oklch(0.28 0.08 155)", fontFamily: "Inter, sans-serif" }}
+                  style={{ color: "oklch(0.28 0.12 260)", fontFamily: "Inter, sans-serif" }}
                 >
                   Submit another request
                 </button>
@@ -270,7 +270,7 @@ export default function ContactSection() {
                             value={type}
                             checked={form.propertyType === type}
                             onChange={handleChange}
-                            style={{ accentColor: "oklch(0.28 0.08 155)" }}
+                            style={{ accentColor: "oklch(0.28 0.12 260)" }}
                           />
                           {type.charAt(0).toUpperCase() + type.slice(1)}
                         </label>
@@ -318,7 +318,7 @@ export default function ContactSection() {
                   type="submit"
                   className="w-full py-3.5 rounded font-semibold text-sm flex items-center justify-center gap-2 transition-all hover:shadow-lg hover:-translate-y-0.5"
                   style={{
-                    backgroundColor: "oklch(0.28 0.08 155)",
+                    backgroundColor: "oklch(0.28 0.12 260)",
                     color: "white",
                     fontFamily: "Oswald, sans-serif",
                     letterSpacing: "0.08em",
@@ -361,7 +361,7 @@ function ContactItem({
         className="w-9 h-9 rounded flex items-center justify-center flex-shrink-0 mt-0.5"
         style={{ backgroundColor: "oklch(0.68 0.18 65 / 0.15)" }}
       >
-        <Icon size={16} style={{ color: "oklch(0.68 0.18 65)" }} />
+        <Icon size={16} style={{ color: "oklch(0.72 0.16 70)" }} />
       </div>
       <div>
         <div

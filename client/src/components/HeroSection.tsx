@@ -1,6 +1,6 @@
 /**
- * HeroSection — Rugged Americana / Blue-Collar Premium
- * Full-bleed hero with asymmetric text layout, diagonal clip, amber CTA
+ * HeroSection — C&K Applications
+ * Full-bleed hero with asymmetric text layout, diagonal clip, gold CTA
  */
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
@@ -50,10 +50,10 @@ export default function HeroSection() {
         {/* Dark gradient overlay — left side heavier for text readability */}
         <div
           className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(105deg, oklch(0.12 0.06 155 / 0.92) 0%, oklch(0.12 0.06 155 / 0.80) 45%, oklch(0.12 0.06 155 / 0.30) 100%)",
-          }}
+        style={{
+          background:
+            "linear-gradient(105deg, oklch(0.15 0.10 260 / 0.92) 0%, oklch(0.15 0.10 260 / 0.80) 45%, oklch(0.15 0.10 260 / 0.30) 100%)",
+        }}
         />
         {/* Subtle noise texture */}
         <div
@@ -73,13 +73,13 @@ export default function HeroSection() {
             className={`flex items-center gap-3 mb-5 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
             style={{ transitionDelay: "0.1s" }}
           >
-            <div
-              className="h-0.5 w-12"
-              style={{ backgroundColor: "oklch(0.68 0.18 65)" }}
-            />
+          <div
+            className="h-0.5 w-12"
+            style={{ backgroundColor: "oklch(0.72 0.16 70)" }}
+          />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               Triangle Area, NC
             </span>
@@ -98,9 +98,9 @@ export default function HeroSection() {
           >
             Professional
             <br />
-            <span style={{ color: "oklch(0.68 0.18 65)" }}>Pressure Washing</span>
+            <span style={{ color: "oklch(0.72 0.16 70)" }}>Pressure Washing</span>
             <br />
-            & Roof Coatings
+            Pressure Washing & Coatings
           </h1>
 
           {/* Subheading */}
@@ -126,7 +126,7 @@ export default function HeroSection() {
           >
             {highlights.map((h) => (
               <div key={h} className="flex items-center gap-2">
-                <CheckCircle2 size={16} style={{ color: "oklch(0.68 0.18 65)" }} />
+                <CheckCircle2 size={16} style={{ color: "oklch(0.72 0.16 70)" }} />
                 <span
                   className="text-sm text-white/90"
                   style={{ fontFamily: "Inter, sans-serif" }}
@@ -146,7 +146,7 @@ export default function HeroSection() {
               onClick={() => scrollTo("#contact")}
               className="flex items-center gap-2 px-7 py-3.5 rounded font-semibold text-sm transition-all hover:shadow-xl hover:-translate-y-0.5"
               style={{
-                backgroundColor: "oklch(0.68 0.18 65)",
+                backgroundColor: "oklch(0.72 0.16 70)",
                 color: "oklch(0.12 0.02 255)",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -190,7 +190,7 @@ export default function HeroSection() {
                   style={{
                     fontFamily: "Oswald, sans-serif",
                     fontSize: "1.6rem",
-                    color: "oklch(0.68 0.18 65)",
+                    color: "oklch(0.72 0.16 70)",
                   }}
                 >
                   {stat.value}

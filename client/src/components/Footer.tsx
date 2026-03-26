@@ -41,7 +41,7 @@ export default function Footer() {
       {/* CTA Banner */}
       <div
         className="py-10"
-        style={{ backgroundColor: "oklch(0.68 0.18 65)" }}
+        style={{ backgroundColor: "oklch(0.72 0.16 70)" }}
       >
         <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
@@ -63,7 +63,7 @@ export default function Footer() {
               onClick={() => scrollTo("#contact")}
               className="px-6 py-3 rounded font-semibold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5"
               style={{
-                backgroundColor: "oklch(0.20 0.08 155)",
+                backgroundColor: "oklch(0.20 0.12 260)",
                 color: "white",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -76,7 +76,7 @@ export default function Footer() {
               href="tel:+19195550100"
               className="flex items-center gap-2 px-6 py-3 rounded font-semibold text-sm transition-all hover:bg-black/10"
               style={{
-                border: "2px solid oklch(0.20 0.08 155)",
+                border: "2px solid oklch(0.20 0.12 260)",
                 color: "oklch(0.12 0.02 255)",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -99,7 +99,7 @@ export default function Footer() {
               <div
                 className="w-10 h-10 rounded flex items-center justify-center font-bold text-lg"
                 style={{
-                  backgroundColor: "oklch(0.68 0.18 65)",
+                  backgroundColor: "oklch(0.72 0.16 70)",
                   color: "oklch(0.15 0.02 255)",
                   fontFamily: "Oswald, sans-serif",
                 }}
@@ -118,12 +118,12 @@ export default function Footer() {
                   style={{
                     fontFamily: "Inter, sans-serif",
                     fontSize: "0.6rem",
-                    color: "oklch(0.68 0.18 65)",
+                    color: "oklch(0.72 0.16 70)",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
                   }}
                 >
-                  & Roof Coatings
+                  Pressure Washing & Coatings
                 </div>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function Footer() {
               <a
                 href="tel:+19195550100"
                 className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity"
-                style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Inter, sans-serif" }}
+                style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
               >
                 <Phone size={13} />
                 (919) 555-0100
@@ -146,7 +146,7 @@ export default function Footer() {
               <a
                 href="mailto:info@triangleprowash.com"
                 className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity"
-                style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Inter, sans-serif" }}
+                style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
               >
                 <Mail size={13} />
                 info@triangleprowash.com
@@ -155,7 +155,7 @@ export default function Footer() {
                 className="flex items-start gap-2 text-sm"
                 style={{ color: "oklch(0.65 0.03 80)", fontFamily: "Inter, sans-serif" }}
               >
-                <MapPin size={13} className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.68 0.18 65)" }} />
+                <MapPin size={13} className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.72 0.16 70)" }} />
                 Triangle Area, NC
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function Footer() {
               <a
                 href="#"
                 className="w-9 h-9 rounded flex items-center justify-center transition-colors hover:opacity-80"
-                style={{ backgroundColor: "oklch(0.28 0.08 155)", color: "oklch(0.68 0.18 65)" }}
+                style={{ backgroundColor: "oklch(0.28 0.12 260)", color: "oklch(0.72 0.16 70)" }}
                 aria-label="Facebook"
               >
                 <Facebook size={16} />
@@ -172,7 +172,7 @@ export default function Footer() {
               <a
                 href="#"
                 className="w-9 h-9 rounded flex items-center justify-center transition-colors hover:opacity-80"
-                style={{ backgroundColor: "oklch(0.28 0.08 155)", color: "oklch(0.68 0.18 65)" }}
+                style={{ backgroundColor: "oklch(0.28 0.12 260)", color: "oklch(0.72 0.16 70)" }}
                 aria-label="Instagram"
               >
                 <Instagram size={16} />
@@ -184,7 +184,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-bold mb-4 text-sm uppercase tracking-wider"
-              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.68 0.18 65)" }}
+              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.72 0.16 70)" }}
             >
               Residential
             </h4>
@@ -207,7 +207,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-bold mb-4 text-sm uppercase tracking-wider"
-              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.68 0.18 65)" }}
+              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.72 0.16 70)" }}
             >
               Commercial
             </h4>
@@ -230,7 +230,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-bold mb-4 text-sm uppercase tracking-wider"
-              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.68 0.18 65)" }}
+              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.72 0.16 70)" }}
             >
               Service Areas
             </h4>
@@ -252,14 +252,14 @@ export default function Footer() {
       {/* Bottom bar */}
       <div
         className="py-4"
-        style={{ borderTop: "1px solid oklch(0.28 0.08 155)" }}
+        style={{ borderTop: "1px solid oklch(0.28 0.12 260)" }}
       >
         <div className="container flex flex-col sm:flex-row items-center justify-between gap-2">
           <p
             className="text-xs"
             style={{ color: "oklch(0.50 0.03 80)", fontFamily: "Inter, sans-serif" }}
           >
-            © {new Date().getFullYear()} Triangle Pro Wash & Roof Coatings. All rights reserved.
+            © {new Date().getFullYear()} C&K Applications Pressure Washing & Coatings. All rights reserved.
           </p>
           <p
             className="text-xs"

@@ -25,14 +25,14 @@ const testimonials = [
     location: "Raleigh, NC",
     service: "Pressure Washing",
     rating: 5,
-    text: "Triangle Pro Wash did an incredible job on our driveway and house siding. The difference was night and day — years of grime gone in a few hours. They were professional, on time, and priced fairly. Will absolutely use them again.",
+    text: "C&K Applications did an incredible job on our driveway and house siding. The difference was night and day — years of grime gone in a few hours. They were professional, on time, and priced fairly. Will absolutely use them again.",
   },
   {
     name: "James T.",
     location: "Durham, NC",
     service: "Commercial Roof Coating",
     rating: 5,
-    text: "We had a large commercial building with a failing flat roof. Triangle Pro Wash came out, assessed the situation, and applied a full elastomeric coating system. The work was done on schedule and our energy bills have noticeably dropped. Highly recommend for any commercial property owner.",
+    text: "We had a large commercial building with a failing flat roof. C&K Applications came out, assessed the situation, and applied a full elastomeric coating system. The work was done on schedule and our energy bills have noticeably dropped. Highly recommend for any commercial property owner.",
   },
   {
     name: "Linda R.",
@@ -46,7 +46,7 @@ const testimonials = [
     location: "Cary, NC",
     service: "Handyman & Pressure Washing",
     rating: 5,
-    text: "Used Triangle Pro Wash for a combination of handyman repairs and pressure washing before putting our house on the market. The house looked amazing — our realtor said the curb appeal made a real difference. Sold above asking price!",
+    text: "Used C&K Applications for a combination of handyman repairs and pressure washing before putting our house on the market. The house looked amazing — our realtor said the curb appeal made a real difference. Sold above asking price!",
   },
   {
     name: "Patricia K.",
@@ -60,7 +60,7 @@ const testimonials = [
     location: "Apex, NC",
     service: "Roof Cleaning",
     rating: 5,
-    text: "The black streaks on our roof were embarrassing. Triangle Pro Wash used a soft-wash method that removed all the algae without damaging the shingles. The roof looks like it was just installed. Great communication throughout.",
+    text: "The black streaks on our roof were embarrassing. C&K Applications used a soft-wash method that removed all the algae without damaging the shingles. The roof looks like it was just installed. Great communication throughout.",
   },
 ];
 
@@ -79,10 +79,10 @@ export default function TestimonialsSection() {
           className={`mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.68 0.18 65)" }} />
+            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               What Our Customers Say
             </span>
@@ -124,8 +124,8 @@ export default function TestimonialsSection() {
                   <Star
                     key={j}
                     size={14}
-                    fill="oklch(0.68 0.18 65)"
-                    style={{ color: "oklch(0.68 0.18 65)" }}
+                    fill="oklch(0.72 0.16 70)"
+                    style={{ color: "oklch(0.72 0.16 70)" }}
                   />
                 ))}
               </div>
@@ -158,7 +158,7 @@ export default function TestimonialsSection() {
                   className="text-xs px-2 py-1 rounded"
                   style={{
                     backgroundColor: "oklch(0.28 0.08 155 / 0.08)",
-                    color: "oklch(0.28 0.08 155)",
+                    color: "oklch(0.28 0.12 260)",
                     fontFamily: "Inter, sans-serif",
                   }}
                 >

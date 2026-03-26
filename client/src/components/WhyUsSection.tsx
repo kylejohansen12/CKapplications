@@ -75,14 +75,14 @@ export default function WhyUsSection() {
           className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.68 0.18 65)" }} />
+            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               Our Process
             </span>
-            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.68 0.18 65)" }} />
+            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
           </div>
           <h2
             className="font-bold leading-tight text-white"
@@ -99,7 +99,7 @@ export default function WhyUsSection() {
             style={{ color: "oklch(0.72 0.03 80)", fontFamily: "Inter, sans-serif", fontWeight: 300 }}
           >
             Getting your home or business cleaned and protected is simple. Here's
-            what to expect when you work with Triangle Pro Wash.
+            what to expect when you work with C&K Applications.
           </p>
         </div>
 
@@ -112,8 +112,8 @@ export default function WhyUsSection() {
                 key={step.step}
                 className={`relative p-6 rounded-lg transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 style={{
-                  backgroundColor: "oklch(0.28 0.08 155)",
-                  border: "1px solid oklch(0.35 0.08 155)",
+                  backgroundColor: "oklch(0.28 0.12 260)",
+                  border: "1px solid oklch(0.40 0.12 260)",
                   transitionDelay: `${i * 0.1}s`,
                 }}
               >
@@ -123,7 +123,7 @@ export default function WhyUsSection() {
                   style={{
                     fontFamily: "Oswald, sans-serif",
                     fontSize: "3rem",
-                    color: "oklch(0.68 0.18 65)",
+                    color: "oklch(0.72 0.16 70)",
                     lineHeight: 1,
                   }}
                 >
@@ -134,7 +134,7 @@ export default function WhyUsSection() {
                   className="w-12 h-12 rounded flex items-center justify-center mb-4"
                   style={{ backgroundColor: "oklch(0.68 0.18 65 / 0.15)" }}
                 >
-                  <Icon size={22} style={{ color: "oklch(0.68 0.18 65)" }} />
+                  <Icon size={22} style={{ color: "oklch(0.72 0.16 70)" }} />
                 </div>
 
                 <h3
@@ -172,7 +172,7 @@ export default function WhyUsSection() {
           className={`rounded-xl p-8 lg:p-10 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           style={{
             backgroundColor: "oklch(0.15 0.07 155)",
-            border: "1px solid oklch(0.35 0.08 155)",
+            border: "1px solid oklch(0.40 0.12 260)",
             transitionDelay: "0.5s",
           }}
         >
@@ -193,7 +193,7 @@ export default function WhyUsSection() {
                 style={{ color: "oklch(0.68 0.03 80)", fontFamily: "Inter, sans-serif" }}
               >
                 From Raleigh to Durham, Chapel Hill to Wake Forest, and everywhere in
-                between — Triangle Pro Wash is your local exterior service expert. We
+                between — C&K Applications is your local exterior service expert. We
                 know the Triangle's climate, architecture, and the unique challenges that
                 come with maintaining properties in our region.
               </p>
@@ -205,7 +205,7 @@ export default function WhyUsSection() {
                     key={city}
                     className="text-center py-2 px-3 rounded text-xs"
                     style={{
-                      backgroundColor: "oklch(0.28 0.08 155)",
+                      backgroundColor: "oklch(0.28 0.12 260)",
                       color: "oklch(0.80 0.03 80)",
                       fontFamily: "Inter, sans-serif",
                     }}

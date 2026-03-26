@@ -1,6 +1,6 @@
 /**
- * ResidentialSection — Rugged Americana / Blue-Collar Premium
- * Off-white background, service cards with green hover, amber accents
+ * ResidentialSection — C&K Applications
+ * Off-white background, service cards with blue hover, gold accents
  */
 import { useEffect, useRef, useState } from "react";
 import { Droplets, Paintbrush, Wind, Wrench, Layers, Home } from "lucide-react";
@@ -88,10 +88,10 @@ export default function ResidentialSection() {
           className={`mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.68 0.18 65)" }} />
+            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               For Homeowners
             </span>
@@ -132,7 +132,7 @@ export default function ResidentialSection() {
               />
               <div
                 className="absolute bottom-0 left-0 right-0 p-4"
-                style={{ background: "linear-gradient(to top, oklch(0.12 0.06 155 / 0.85), transparent)" }}
+                style={{ background: "linear-gradient(to top, oklch(0.15 0.10 260 / 0.85), transparent)" }}
               >
                 <p
                   className="text-white font-semibold"
@@ -170,7 +170,7 @@ export default function ResidentialSection() {
           <div
             className={`rounded-lg p-8 flex flex-col justify-between transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             style={{
-              backgroundColor: "oklch(0.28 0.08 155)",
+              backgroundColor: "oklch(0.28 0.12 260)",
               transitionDelay: "0.6s",
             }}
           >
@@ -192,7 +192,7 @@ export default function ResidentialSection() {
               onClick={scrollToContact}
               className="w-full py-3 rounded font-semibold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5"
               style={{
-                backgroundColor: "oklch(0.68 0.18 65)",
+                backgroundColor: "oklch(0.72 0.16 70)",
                 color: "oklch(0.12 0.02 255)",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -228,10 +228,10 @@ function ServiceCard({
       }}
     >
       <div
-        className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0 transition-colors group-hover:bg-amber-500"
-        style={{ backgroundColor: "oklch(0.28 0.08 155 / 0.1)" }}
+        className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0 transition-colors group-hover:bg-blue-500"
+        style={{ backgroundColor: "oklch(0.28 0.12 260 / 0.1)" }}
       >
-        <Icon size={20} style={{ color: "oklch(0.28 0.08 155)" }} />
+        <Icon size={20} style={{ color: "oklch(0.28 0.12 260)" }} />
       </div>
       <div>
         <h3
@@ -294,7 +294,7 @@ function ServiceImageCard({
       )}
       <div className="p-5">
         <div className="flex items-center gap-2 mb-2">
-          <Icon size={16} style={{ color: "oklch(0.68 0.18 65)" }} />
+          <Icon size={16} style={{ color: "oklch(0.72 0.16 70)" }} />
           <h3
             className="font-bold"
             style={{

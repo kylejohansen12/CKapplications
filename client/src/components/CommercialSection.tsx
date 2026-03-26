@@ -1,6 +1,6 @@
 /**
- * CommercialSection — Rugged Americana / Blue-Collar Premium
- * Dark forest green background (reversed colors), amber accents
+ * CommercialSection — C&K Applications
+ * Dark blue background (reversed colors), gold accents
  * Full-bleed commercial roof coating image
  */
 import { useEffect, useRef, useState } from "react";
@@ -74,7 +74,7 @@ export default function CommercialSection() {
       id="commercial"
       ref={ref}
       className="py-24 relative overflow-hidden"
-      style={{ backgroundColor: "oklch(0.20 0.08 155)" }}
+      style={{ backgroundColor: "oklch(0.20 0.12 260)" }}
     >
       {/* Subtle texture */}
       <div
@@ -91,10 +91,10 @@ export default function CommercialSection() {
           className={`mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.68 0.18 65)" }} />
+            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               For Business Owners
             </span>
@@ -148,7 +148,7 @@ export default function CommercialSection() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(to top, oklch(0.12 0.06 155 / 0.7) 0%, transparent 60%)",
+                    "linear-gradient(to top, oklch(0.15 0.10 260 / 0.7) 0%, transparent 60%)",
                 }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-5">
@@ -170,11 +170,11 @@ export default function CommercialSection() {
             {/* Roof coating highlight box */}
             <div
               className="rounded-lg p-6"
-              style={{ backgroundColor: "oklch(0.28 0.08 155)", border: "1px solid oklch(0.35 0.08 155)" }}
+              style={{ backgroundColor: "oklch(0.28 0.12 260)", border: "1px solid oklch(0.40 0.12 260)" }}
             >
               <div
                 className="text-sm font-semibold tracking-widest uppercase mb-2"
-                style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+                style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
               >
                 Why Roof Coatings?
               </div>
@@ -191,7 +191,7 @@ export default function CommercialSection() {
                     className="flex items-center gap-2 text-sm"
                     style={{ color: "oklch(0.80 0.03 80)", fontFamily: "Inter, sans-serif" }}
                   >
-                    <ArrowRight size={14} style={{ color: "oklch(0.68 0.18 65)", flexShrink: 0 }} />
+                    <ArrowRight size={14} style={{ color: "oklch(0.72 0.16 70)", flexShrink: 0 }} />
                     {item}
                   </li>
                 ))}
@@ -202,7 +202,7 @@ export default function CommercialSection() {
               onClick={scrollToContact}
               className="w-full py-3.5 rounded font-semibold text-sm transition-all hover:shadow-xl hover:-translate-y-0.5"
               style={{
-                backgroundColor: "oklch(0.68 0.18 65)",
+                backgroundColor: "oklch(0.72 0.16 70)",
                 color: "oklch(0.12 0.02 255)",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -232,16 +232,16 @@ function CommercialCard({
     <div
       className={`p-5 rounded-lg transition-all duration-700 hover:shadow-xl group cursor-default ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       style={{
-        backgroundColor: "oklch(0.28 0.08 155)",
-        border: "1px solid oklch(0.35 0.08 155)",
+        backgroundColor: "oklch(0.28 0.12 260)",
+        border: "1px solid oklch(0.40 0.12 260)",
         transitionDelay: `${delay}s`,
       }}
     >
       <div
         className="w-10 h-10 rounded flex items-center justify-center mb-3 transition-colors"
-        style={{ backgroundColor: "oklch(0.68 0.18 65 / 0.15)" }}
+        style={{ backgroundColor: "oklch(0.72 0.16 70 / 0.15)" }}
       >
-        <Icon size={20} style={{ color: "oklch(0.68 0.18 65)" }} />
+        <Icon size={20} style={{ color: "oklch(0.72 0.16 70)" }} />
       </div>
       <h3
         className="font-bold mb-2 text-white"

@@ -57,7 +57,7 @@ const values = [
   {
     title: "Locally Owned & Operated",
     body:
-      "We're your neighbors. Triangle Pro Wash was founded right here in the Triangle Area and we take pride in serving our community with integrity.",
+      "We're your neighbors. C&K Applications was founded right here in the Triangle Area and we take pride in serving our community with integrity.",
   },
   {
     title: "Licensed & Fully Insured",
@@ -92,10 +92,10 @@ export default function AboutSection() {
           className={`mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.68 0.18 65)" }} />
+            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.68 0.18 65)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               Who We Are
             </span>
@@ -111,7 +111,7 @@ export default function AboutSection() {
           >
             The Triangle's Trusted
             <br />
-            <span style={{ color: "oklch(0.28 0.08 155)" }}>Exterior Service Pros</span>
+            <span style={{ color: "oklch(0.28 0.12 260)" }}>Exterior Service Pros</span>
           </h2>
         </div>
 
@@ -132,14 +132,14 @@ export default function AboutSection() {
                   className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3"
                   style={{ backgroundColor: "oklch(0.28 0.08 155 / 0.1)" }}
                 >
-                  <Icon size={22} style={{ color: "oklch(0.28 0.08 155)" }} />
+                  <Icon size={22} style={{ color: "oklch(0.28 0.12 260)" }} />
                 </div>
                 <div
                   className="font-bold leading-none mb-1"
                   style={{
                     fontFamily: "Oswald, sans-serif",
                     fontSize: "2.2rem",
-                    color: "oklch(0.28 0.08 155)",
+                    color: "oklch(0.28 0.12 260)",
                   }}
                 >
                   <AnimatedCounter target={stat.value} suffix={stat.suffix} inView={inView} />
@@ -186,7 +186,7 @@ export default function AboutSection() {
             </h3>
             <div className="space-y-4" style={{ fontFamily: "Inter, sans-serif", color: "oklch(0.40 0.02 255)", lineHeight: 1.8 }}>
               <p>
-                Triangle Pro Wash & Roof Coatings was built on a simple belief: every home
+                C&K Applications Pressure Washing & Coatings was built on a simple belief: every home
                 and business in the Triangle Area deserves professional-grade exterior care
                 at a fair price. We started with a pressure washer and a truck, and we've
                 grown into one of the region's most trusted exterior service companies.
@@ -218,7 +218,7 @@ export default function AboutSection() {
                 style={{
                   borderColor: "oklch(0.88 0.01 80)",
                   borderLeftWidth: "4px",
-                  borderLeftColor: "oklch(0.68 0.18 65)",
+                  borderLeftColor: "oklch(0.72 0.16 70)",
                 }}
               >
                 <h4
@@ -227,7 +227,7 @@ export default function AboutSection() {
                     fontFamily: "Oswald, sans-serif",
                     fontSize: "0.95rem",
                     textTransform: "uppercase",
-                    color: "oklch(0.28 0.08 155)",
+                    color: "oklch(0.28 0.12 260)",
                   }}
                 >
                   {v.title}
