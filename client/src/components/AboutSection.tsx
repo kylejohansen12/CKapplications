@@ -48,7 +48,7 @@ function AnimatedCounter({ target, suffix = "", inView }: { target: number; suff
 
 const stats = [
   { icon: Users, value: 1000, suffix: "+", label: "Homes Served", sub: "Across the Triangle Area" },
-  { icon: Award, value: 5, suffix: "+", label: "Years in Business", sub: "Trusted since day one" },
+  { icon: Award, value: 10, suffix: "+", label: "Years in Business", sub: "Trusted since day one" },
   { icon: MapPin, value: 9, suffix: "+", label: "Cities Served", sub: "Raleigh, Durham, Chapel Hill & more" },
   { icon: ThumbsUp, value: 100, suffix: "%", label: "Satisfaction Goal", sub: "We don't leave until it's right" },
 ];
@@ -186,7 +186,7 @@ export default function AboutSection() {
             </h3>
             <div className="space-y-4" style={{ fontFamily: "Inter, sans-serif", color: "oklch(0.40 0.02 255)", lineHeight: 1.8 }}>
               <p>
-                C&K Applications Pressure Washing & Coatings was built on a simple belief: every home
+                C&K Applications Pressure Washing & Roof Coatings was built on a simple belief: every home
                 and business in the Triangle Area deserves professional-grade exterior care
                 at a fair price. We started with a pressure washer and a truck, and we've
                 grown into one of the region's most trusted exterior service companies.
@@ -199,8 +199,8 @@ export default function AboutSection() {
               </p>
               <p>
                 With over 1,000 homes served and countless commercial projects completed,
-                we've earned our reputation one job at a time. When you call Triangle Pro
-                Wash, you're not just hiring a contractor — you're working with a team that
+                we've earned our reputation one job at a time. When you call CK Applications,
+                you're not just hiring a contractor — you're working with a team that
                 genuinely cares about your property.
               </p>
             </div>
