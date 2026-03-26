@@ -57,7 +57,7 @@ export default function WhyUsSection() {
     <section
       ref={ref}
       className="py-24 relative overflow-hidden"
-      style={{ backgroundColor: "oklch(0.22 0.08 155)" }}
+      style={{ backgroundColor: '#606060' }}
     >
       {/* Background pattern */}
       <div

@@ -111,7 +111,7 @@ export default function Footer() {
                   className="text-white font-bold leading-tight"
                   style={{ fontFamily: "Oswald, sans-serif", fontSize: "0.95rem", letterSpacing: "0.05em" }}
                 >
-                  TRIANGLE PRO WASH
+                  CK APPLICATIONS
                 </div>
                 <div
                   className="leading-tight"
@@ -123,7 +123,7 @@ export default function Footer() {
                     textTransform: "uppercase",
                   }}
                 >
-                  Pressure Washing & Coatings
+                  Pressure Washing & Roof Coatings
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Footer() {
                 style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
               >
                 <Phone size={13} />
-                (919) 555-0100
+                (831) 588-1034
               </a>
               <a
                 href="mailto:info@triangleprowash.com"

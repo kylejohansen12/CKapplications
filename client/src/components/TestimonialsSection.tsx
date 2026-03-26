@@ -32,7 +32,7 @@ const testimonials = [
     location: "Durham, NC",
     service: "Commercial Roof Coating",
     rating: 5,
-    text: "We had a large commercial building with a failing flat roof. C&K Applications came out, assessed the situation, and applied a full elastomeric coating system. The work was done on schedule and our energy bills have noticeably dropped. Highly recommend for any commercial property owner.",
+    text: "We had a large commercial building with a failing TPO roof. C&K Applications came out, assessed the situation, and applied a full silicone coating system. The work was done on schedule and our energy bills have noticeably dropped. Highly recommend for any commercial property owner.",
   },
   {
     name: "Linda R.",

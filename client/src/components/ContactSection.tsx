@@ -120,14 +120,14 @@ export default function ContactSection() {
                 <ContactItem
                   icon={Phone}
                   label="Phone"
-                  value="(919) 555-0100"
-                  href="tel:+19195550100"
+                  value="(831) 588-1034"
+                  href="tel:+18315881034"
                 />
                 <ContactItem
                   icon={Mail}
                   label="Email"
-                  value="info@triangleprowash.com"
-                  href="mailto:info@triangleprowash.com"
+                  value="ckapplications@gmail.com"
+                  href="mailto:ckapplications@gmail.com"
                 />
                 <ContactItem
                   icon={MapPin}
@@ -225,7 +225,7 @@ export default function ContactSection() {
                     <input
                       name="phone"
                       type="tel"
-                      placeholder="(919) 000-0000"
+                      placeholder="(831) 000-0000"
                       value={form.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-2.5 rounded border text-sm focus:outline-none focus:ring-2 transition-shadow"

@@ -72,7 +72,7 @@ export default function Navbar() {
           style={{ fontFamily: "Inter, sans-serif" }}
         >
           <Phone size={13} />
-          <span>(919) 555-0100</span>
+          <span>(831) 588-1034</span>
         </a>
         <span className="mx-3 opacity-40">|</span>
         <span>Serving Raleigh, Durham, Chapel Hill & the Triangle Area</span>
@@ -112,7 +112,7 @@ export default function Navbar() {
                 textTransform: "uppercase",
               }}
             >
-              Pressure Washing & Coatings
+              Pressure Washing & Roof Coatings
             </div>
           </div>
         </button>

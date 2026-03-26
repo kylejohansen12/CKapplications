@@ -98,9 +98,9 @@ export default function HeroSection() {
           >
             Professional
             <br />
-            <span style={{ color: "oklch(0.72 0.16 70)" }}>Pressure Washing</span>
+            <span style={{ color: "oklch(0.72 0.16 70)" }}>Roof Coatings</span>
             <br />
-            Pressure Washing & Coatings
+            & Power Washing
           </h1>
 
           {/* Subheading */}
@@ -158,7 +158,7 @@ export default function HeroSection() {
               <ArrowRight size={16} />
             </button>
             <a
-              href="tel:+19195550100"
+              href="tel:+18315881034"
               className="flex items-center gap-2 px-7 py-3.5 rounded font-semibold text-sm transition-all hover:bg-white/20"
               style={{
                 border: "2px solid rgba(255,255,255,0.6)",
