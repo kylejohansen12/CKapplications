@@ -172,13 +172,21 @@ export default function CommercialSection() {
               className="rounded-lg p-6"
               style={{ backgroundColor: "oklch(0.28 0.12 260)", border: "1px solid oklch(0.40 0.12 260)" }}
             >
-              <div
-                className="text-sm font-semibold tracking-widest uppercase mb-2"
-                style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
-              >
-                Why Roof Coatings?
+              <div className="flex items-center justify-between mb-4">
+                <div
+                  className="text-sm font-semibold tracking-widest uppercase"
+                  style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
+                >
+                  Why Roof Coatings?
+                </div>
+                <div
+                  className="text-xs font-bold px-3 py-1 rounded"
+                  style={{ backgroundColor: "oklch(0.72 0.16 70)", color: "oklch(0.12 0.02 255)", fontFamily: "Oswald, sans-serif" }}
+                >
+                  Sherwin Williams Certified
+                </div>
               </div>
-              <ul className="space-y-2">
+              <ul className="space-y-2 mt-3">
                 {[
                   "Extends roof life 10–20 years",
                   "Reduces energy costs up to 30%",
