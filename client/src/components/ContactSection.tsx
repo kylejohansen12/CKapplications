@@ -126,8 +126,8 @@ export default function ContactSection() {
                 <ContactItem
                   icon={Mail}
                   label="Email"
-                  value="ckapplications@gmail.com"
-                  href="mailto:ckapplications@gmail.com"
+                  value="ckapplicationservices@gmail.com"
+                  href="mailto:ckapplicationservices@gmail.com"
                 />
                 <ContactItem
                   icon={MapPin}
