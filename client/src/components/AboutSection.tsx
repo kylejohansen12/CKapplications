@@ -49,7 +49,7 @@ function AnimatedCounter({ target, suffix = "", inView }: { target: number; suff
 const stats = [
   { icon: Users, value: 1000, suffix: "+", label: "Homes Served", sub: "Across the Triangle Area" },
   { icon: Award, value: 10, suffix: "+", label: "Years in Business", sub: "Trusted since day one" },
-  { icon: MapPin, value: 9, suffix: "+", label: "Cities Served", sub: "Raleigh, Durham, Chapel Hill & more" },
+  { icon: MapPin, value: 10, suffix: "+", label: "Multiple Cities Served", sub: "Raleigh, Durham, Chapel Hill & more" },
   { icon: ThumbsUp, value: 100, suffix: "%", label: "Satisfaction Goal", sub: "We don't leave until it's right" },
 ];
 

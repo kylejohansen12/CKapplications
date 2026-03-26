@@ -112,7 +112,7 @@ export default function Navbar() {
                 textTransform: "uppercase",
               }}
             >
-              Pressure Washing & Roof Coatings
+              Residential & Commercial Building Services
             </div>
           </div>
         </button>
