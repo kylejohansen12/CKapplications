@@ -104,7 +104,7 @@ export default function Footer() {
                   fontFamily: "Oswald, sans-serif",
                 }}
               >
-                T
+                CK
               </div>
               <div>
                 <div
