@@ -1,6 +1,6 @@
 /**
- * Home Page — Triangle Pro Wash & Roof Coatings
- * Design: Rugged Americana / Blue-Collar Premium
+ * Home Page — CK Applications
+ * Design: Professional Blue, Gold & White
  * All sections assembled in order
  */
 import Navbar from "@/components/Navbar";
@@ -10,8 +10,8 @@ import CommercialSection from "@/components/CommercialSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import ContactSection from "@/components/ContactSection";
 import ServiceAreaMap from "@/components/ServiceAreaMap";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
