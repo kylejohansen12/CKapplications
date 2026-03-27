@@ -132,7 +132,7 @@ export default function Footer() {
               style={{ color: "oklch(0.65 0.03 80)", fontFamily: "Inter, sans-serif" }}
             >
               Serving the Triangle Area with professional pressure washing,
-              roof coatings, and exterior home services since day one.
+              roof coatings, and exterior home and building services since day one.
             </p>
             <div className="space-y-2">
               <a
