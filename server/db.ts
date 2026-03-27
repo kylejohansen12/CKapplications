@@ -120,3 +120,19 @@ export async function getAllQuotes() {
     throw error;
   }
 }
+
+export async function updateQuoteStatus(quoteId: number, status: "new" | "contacted" | "completed") {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot update quote: database not available");
+    throw new Error("Database not available");
+  }
+
+  try {
+    const result = await db.update(quotes).set({ status }).where(eq(quotes.id, quoteId));
+    return result;
+  } catch (error) {
+    console.error("[Database] Failed to update quote:", error);
+    throw error;
+  }
+}

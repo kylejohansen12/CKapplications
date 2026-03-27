@@ -3,7 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { z } from "zod";
-import { createQuote, getAllQuotes } from "./db";
+import { createQuote, getAllQuotes, updateQuoteStatus } from "./db";
 import { notifyOwner } from "./_core/notification";
 
 export const appRouter = router({
@@ -75,6 +75,25 @@ Please follow up with the customer as soon as possible.`;
     list: publicProcedure.query(async () => {
       return await getAllQuotes();
     }),
+    updateStatus: publicProcedure
+      .input(
+        z.object({
+          quoteId: z.number().int().positive(),
+          status: z.enum(["new", "contacted", "completed"]),
+        })
+      )
+      .mutation(async ({ input }) => {
+        try {
+          await updateQuoteStatus(input.quoteId, input.status);
+          return {
+            success: true,
+            message: "Quote status updated successfully",
+          };
+        } catch (error) {
+          console.error("[Quote Update] Error:", error);
+          throw new Error("Failed to update quote status");
+        }
+      }),
   }),
 });
 
