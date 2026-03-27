@@ -4,9 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================================
-   DESIGN SYSTEM: C&K Applications — Blue, Gold, White
-   - Primary: Deep Blue (#003D7A)
-   - Accent: Rich Gold (#D4AF37)
+   DESIGN SYSTEM: C&K Applications — Blue, Dark Blue, White, Light Blue
+   - Primary: Dark Blue (#003D7A)
+   - Secondary: Bright Blue (#0066CC)
+   - Accent: Light Blue (#4DA6FF)
    - Background: White (#FFFFFF)
    - Text: Dark Blue (#1E293B)
    - Typography: Oswald (display) + Inter (body)
@@ -51,11 +52,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
   
   /* Brand colors as theme tokens */
-  --color-brand-blue: oklch(0.28 0.12 260);
   --color-brand-blue-dark: oklch(0.18 0.12 260);
-  --color-brand-blue-light: oklch(0.40 0.12 260);
-  --color-brand-gold: oklch(0.72 0.16 70);
-  --color-brand-gold-dark: oklch(0.60 0.16 70);
+  --color-brand-blue: oklch(0.28 0.12 260);
+  --color-brand-blue-bright: oklch(0.45 0.15 260);
+  --color-brand-blue-light: oklch(0.65 0.10 260);
   --color-brand-white: oklch(1 0 0);
 }
 
@@ -67,32 +67,32 @@
   --card-foreground: oklch(0.22 0.02 255);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.22 0.02 255);
-  --primary: oklch(0.28 0.12 260);
+  --primary: oklch(0.18 0.12 260);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.96 0.01 0);
-  --secondary-foreground: oklch(0.28 0.12 260);
+  --secondary: oklch(0.45 0.15 260);
+  --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.93 0.01 0);
   --muted-foreground: oklch(0.50 0.02 255);
-  --accent: oklch(0.72 0.16 70);
+  --accent: oklch(0.65 0.10 260);
   --accent-foreground: oklch(0.15 0.02 255);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.92 0.01 0);
   --input: oklch(0.92 0.01 0);
-  --ring: oklch(0.28 0.12 260);
-  --chart-1: oklch(0.28 0.12 260);
-  --chart-2: oklch(0.72 0.16 70);
-  --chart-3: oklch(0.40 0.12 260);
-  --chart-4: oklch(0.60 0.16 70);
+  --ring: oklch(0.18 0.12 260);
+  --chart-1: oklch(0.18 0.12 260);
+  --chart-2: oklch(0.45 0.15 260);
+  --chart-3: oklch(0.65 0.10 260);
+  --chart-4: oklch(0.28 0.12 260);
   --chart-5: oklch(0.22 0.02 255);
-  --sidebar: oklch(0.28 0.12 260);
+  --sidebar: oklch(0.18 0.12 260);
   --sidebar-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(0.72 0.16 70);
-  --sidebar-primary-foreground: oklch(0.15 0.02 255);
-  --sidebar-accent: oklch(0.40 0.12 260);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.40 0.12 260);
-  --sidebar-ring: oklch(0.72 0.16 70);
+  --sidebar-primary: oklch(0.45 0.15 260);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.65 0.10 260);
+  --sidebar-accent-foreground: oklch(0.15 0.02 255);
+  --sidebar-border: oklch(0.28 0.12 260);
+  --sidebar-ring: oklch(0.45 0.15 260);
 }
 
 @layer base {
@@ -157,10 +157,10 @@
     letter-spacing: 0.05em;
   }
 
-  .gold-bar {
+  .blue-bar {
     display: inline-block;
     width: 4px;
-    background-color: oklch(0.72 0.16 70);
+    background-color: oklch(0.45 0.15 260);
     border-radius: 2px;
   }
 
@@ -178,8 +178,8 @@
   }
 
   .btn-primary {
-    background-color: oklch(0.72 0.16 70);
-    color: oklch(0.15 0.02 255);
+    background-color: oklch(0.45 0.15 260);
+    color: oklch(1 0 0);
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -193,9 +193,9 @@
   }
 
   .btn-primary:hover {
-    background-color: oklch(0.60 0.16 70);
+    background-color: oklch(0.28 0.12 260);
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px oklch(0.72 0.16 70 / 0.35);
+    box-shadow: 0 4px 16px oklch(0.45 0.15 260 / 0.35);
   }
 
   .btn-outline-white {
@@ -216,7 +216,7 @@
 
   .btn-outline-white:hover {
     background-color: white;
-    color: oklch(0.28 0.12 260);
+    color: oklch(0.18 0.12 260);
   }
 }
 

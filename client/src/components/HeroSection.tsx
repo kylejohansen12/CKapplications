@@ -75,11 +75,11 @@ export default function HeroSection() {
           >
           <div
             className="h-0.5 w-12"
-            style={{ backgroundColor: "oklch(0.72 0.16 70)" }}
+            style={{ backgroundColor: "oklch(0.45 0.15 260)" }}
           />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Oswald, sans-serif" }}
             >
               Triangle Area, NC
             </span>
@@ -98,7 +98,7 @@ export default function HeroSection() {
           >
             Professional
             <br />
-            <span style={{ color: "oklch(0.72 0.16 70)" }}>Roof Coatings</span>
+            <span style={{ color: "oklch(0.45 0.15 260)" }}>Roof Coatings</span>
             <br />
             & Power Washing
           </h1>
@@ -126,7 +126,7 @@ export default function HeroSection() {
           >
             {highlights.map((h) => (
               <div key={h} className="flex items-center gap-2">
-                <CheckCircle2 size={16} style={{ color: "oklch(0.72 0.16 70)" }} />
+                <CheckCircle2 size={16} style={{ color: "oklch(0.45 0.15 260)" }} />
                 <span
                   className="text-sm text-white/90"
                   style={{ fontFamily: "Inter, sans-serif" }}
@@ -146,7 +146,7 @@ export default function HeroSection() {
               onClick={() => scrollTo("#contact")}
               className="flex items-center gap-2 px-7 py-3.5 rounded font-semibold text-sm transition-all hover:shadow-xl hover:-translate-y-0.5"
               style={{
-                backgroundColor: "oklch(0.72 0.16 70)",
+                backgroundColor: "oklch(0.45 0.15 260)",
                 color: "oklch(0.12 0.02 255)",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -190,7 +190,7 @@ export default function HeroSection() {
                   style={{
                     fontFamily: "Oswald, sans-serif",
                     fontSize: "1.6rem",
-                    color: "oklch(0.72 0.16 70)",
+                    color: "oklch(0.45 0.15 260)",
                   }}
                 >
                   {stat.value}

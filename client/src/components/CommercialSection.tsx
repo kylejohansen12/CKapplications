@@ -91,10 +91,10 @@ export default function CommercialSection() {
           className={`mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
+            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.45 0.15 260)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Oswald, sans-serif" }}
             >
               For Business Owners
             </span>
@@ -175,13 +175,13 @@ export default function CommercialSection() {
               <div className="flex items-center justify-between mb-4">
                 <div
                   className="text-sm font-semibold tracking-widest uppercase"
-                  style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
+                  style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Oswald, sans-serif" }}
                 >
                   Why Roof Coatings?
                 </div>
                 <div
                   className="text-xs font-bold px-3 py-1 rounded"
-                  style={{ backgroundColor: "oklch(0.72 0.16 70)", color: "oklch(0.12 0.02 255)", fontFamily: "Oswald, sans-serif" }}
+                  style={{ backgroundColor: "oklch(0.45 0.15 260)", color: "oklch(0.12 0.02 255)", fontFamily: "Oswald, sans-serif" }}
                 >
                   Sherwin Williams Certified
                 </div>
@@ -199,7 +199,7 @@ export default function CommercialSection() {
                     className="flex items-center gap-2 text-sm"
                     style={{ color: "oklch(0.80 0.03 80)", fontFamily: "Inter, sans-serif" }}
                   >
-                    <ArrowRight size={14} style={{ color: "oklch(0.72 0.16 70)", flexShrink: 0 }} />
+                    <ArrowRight size={14} style={{ color: "oklch(0.45 0.15 260)", flexShrink: 0 }} />
                     {item}
                   </li>
                 ))}
@@ -210,7 +210,7 @@ export default function CommercialSection() {
               onClick={scrollToContact}
               className="w-full py-3.5 rounded font-semibold text-sm transition-all hover:shadow-xl hover:-translate-y-0.5"
               style={{
-                backgroundColor: "oklch(0.72 0.16 70)",
+                backgroundColor: "oklch(0.45 0.15 260)",
                 color: "oklch(0.12 0.02 255)",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -249,7 +249,7 @@ function CommercialCard({
         className="w-10 h-10 rounded flex items-center justify-center mb-3 transition-colors"
         style={{ backgroundColor: "oklch(0.72 0.16 70 / 0.15)" }}
       >
-        <Icon size={20} style={{ color: "oklch(0.72 0.16 70)" }} />
+        <Icon size={20} style={{ color: "oklch(0.45 0.15 260)" }} />
       </div>
       <h3
         className="font-bold mb-2 text-white"

@@ -41,7 +41,7 @@ export default function Footer() {
       {/* CTA Banner */}
       <div
         className="py-10"
-        style={{ backgroundColor: "oklch(0.72 0.16 70)" }}
+        style={{ backgroundColor: "oklch(0.45 0.15 260)" }}
       >
         <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
@@ -99,7 +99,7 @@ export default function Footer() {
               <div
                 className="w-10 h-10 rounded flex items-center justify-center font-bold text-lg"
                 style={{
-                  backgroundColor: "oklch(0.72 0.16 70)",
+                  backgroundColor: "oklch(0.45 0.15 260)",
                   color: "oklch(0.15 0.02 255)",
                   fontFamily: "Oswald, sans-serif",
                 }}
@@ -118,7 +118,7 @@ export default function Footer() {
                   style={{
                     fontFamily: "Inter, sans-serif",
                     fontSize: "0.6rem",
-                    color: "oklch(0.72 0.16 70)",
+                    color: "oklch(0.45 0.15 260)",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
                   }}
@@ -138,7 +138,7 @@ export default function Footer() {
               <a
                 href="tel:+19196215375"
                 className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity"
-                style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
+                style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Inter, sans-serif" }}
               >
                 <Phone size={13} />
                 (919) 621-5375
@@ -146,7 +146,7 @@ export default function Footer() {
               <a
                 href="mailto:info@ckapplications.com"
                 className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity"
-                style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
+                style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Inter, sans-serif" }}
               >
                 <Mail size={13} />
                 info@ckapplications.com
@@ -155,7 +155,7 @@ export default function Footer() {
                 className="flex items-start gap-2 text-sm"
                 style={{ color: "oklch(0.65 0.03 80)", fontFamily: "Inter, sans-serif" }}
               >
-                <MapPin size={13} className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.72 0.16 70)" }} />
+                <MapPin size={13} className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.45 0.15 260)" }} />
                 Triangle Area, NC
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function Footer() {
               <a
                 href="#"
                 className="w-9 h-9 rounded flex items-center justify-center transition-colors hover:opacity-80"
-                style={{ backgroundColor: "oklch(0.28 0.12 260)", color: "oklch(0.72 0.16 70)" }}
+                style={{ backgroundColor: "oklch(0.28 0.12 260)", color: "oklch(0.45 0.15 260)" }}
                 aria-label="Facebook"
               >
                 <Facebook size={16} />
@@ -172,7 +172,7 @@ export default function Footer() {
               <a
                 href="#"
                 className="w-9 h-9 rounded flex items-center justify-center transition-colors hover:opacity-80"
-                style={{ backgroundColor: "oklch(0.28 0.12 260)", color: "oklch(0.72 0.16 70)" }}
+                style={{ backgroundColor: "oklch(0.28 0.12 260)", color: "oklch(0.45 0.15 260)" }}
                 aria-label="Instagram"
               >
                 <Instagram size={16} />
@@ -184,7 +184,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-bold mb-4 text-sm uppercase tracking-wider"
-              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.72 0.16 70)" }}
+              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.45 0.15 260)" }}
             >
               Residential
             </h4>
@@ -207,7 +207,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-bold mb-4 text-sm uppercase tracking-wider"
-              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.72 0.16 70)" }}
+              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.45 0.15 260)" }}
             >
               Commercial
             </h4>
@@ -230,7 +230,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-bold mb-4 text-sm uppercase tracking-wider"
-              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.72 0.16 70)" }}
+              style={{ fontFamily: "Oswald, sans-serif", color: "oklch(0.45 0.15 260)" }}
             >
               Service Areas
             </h4>

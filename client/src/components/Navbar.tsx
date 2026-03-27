@@ -93,7 +93,7 @@ export default function Navbar() {
           <div
             className="w-10 h-10 rounded flex items-center justify-center font-bold text-sm"
             style={{
-              backgroundColor: "oklch(0.72 0.16 70)",
+              backgroundColor: "oklch(0.45 0.15 260)",
               color: "oklch(0.15 0.02 255)",
               fontFamily: "Oswald, sans-serif",
               letterSpacing: "-0.05em",
@@ -113,7 +113,7 @@ export default function Navbar() {
               style={{
                 fontFamily: "Inter, sans-serif",
                 fontSize: "0.65rem",
-                color: "oklch(0.72 0.16 70)",
+                color: "oklch(0.45 0.15 260)",
                 letterSpacing: "0.12em",
                 textTransform: "uppercase",
               }}
@@ -173,7 +173,7 @@ export default function Navbar() {
             onClick={() => handleNavClick("#contact")}
             className="ml-3 px-5 py-2 rounded font-semibold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5"
             style={{
-              backgroundColor: "oklch(0.72 0.16 70)",
+              backgroundColor: "oklch(0.45 0.15 260)",
               color: "oklch(0.15 0.02 255)",
               fontFamily: "Oswald, sans-serif",
               letterSpacing: "0.08em",
@@ -231,7 +231,7 @@ export default function Navbar() {
                 onClick={() => handleNavClick("#contact")}
                 className="w-full py-3 rounded font-semibold text-sm"
                 style={{
-                  backgroundColor: "oklch(0.72 0.16 70)",
+                  backgroundColor: "oklch(0.45 0.15 260)",
                   color: "oklch(0.15 0.02 255)",
                   fontFamily: "Oswald, sans-serif",
                   letterSpacing: "0.08em",
@@ -243,7 +243,7 @@ export default function Navbar() {
             </div>
             <div
               className="flex items-center gap-2 px-3 py-2 text-sm"
-              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
+              style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Inter, sans-serif" }}
             >
               <Phone size={14} />
               <a href="tel:+19195550100">(919) 555-0100</a>
