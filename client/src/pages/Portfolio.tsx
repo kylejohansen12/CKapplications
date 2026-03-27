@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import AfterPhotosGallery from "@/components/AfterPhotosGallery";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Filter } from "lucide-react";
@@ -199,6 +200,9 @@ export default function Portfolio() {
             )}
           </div>
         </section>
+
+        {/* After Photos Gallery */}
+        <AfterPhotosGallery />
 
         {/* CTA Section */}
         <section
