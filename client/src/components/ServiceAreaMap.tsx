@@ -8,12 +8,12 @@ import { MapPin } from "lucide-react";
 import { MapView } from "@/components/Map";
 
 const SERVICE_AREAS = [
-  // Primary cities
+  // Primary cities (Triangle Area)
   { name: "Raleigh", lat: 35.7796, lng: -78.6382, type: "primary" },
   { name: "Durham", lat: 35.9940, lng: -78.8986, type: "primary" },
   { name: "Chapel Hill", lat: 35.9132, lng: -79.0558, type: "primary" },
   
-  // Secondary cities
+  // Triangle Area secondary cities
   { name: "Cary", lat: 35.7915, lng: -78.7811, type: "secondary" },
   { name: "Morrisville", lat: 35.8367, lng: -78.8217, type: "secondary" },
   { name: "Apex", lat: 35.7325, lng: -78.8502, type: "secondary" },
@@ -23,6 +23,17 @@ const SERVICE_AREAS = [
   { name: "Wake Forest", lat: 35.9778, lng: -78.5096, type: "secondary" },
   { name: "Rolesville", lat: 35.9542, lng: -78.3931, type: "secondary" },
   { name: "Wendell", lat: 35.7755, lng: -78.4236, type: "secondary" },
+  
+  // Expanded service areas
+  { name: "Greensboro", lat: 36.0726, lng: -79.7920, type: "expanded" },
+  { name: "Fayetteville", lat: 35.0527, lng: -78.8784, type: "expanded" },
+  { name: "Rocky Mount", lat: 35.9395, lng: -77.7903, type: "expanded" },
+  { name: "Goldsboro", lat: 35.3701, lng: -77.9960, type: "expanded" },
+  { name: "Henderson", lat: 36.3264, lng: -78.3975, type: "expanded" },
+  { name: "Wilmington", lat: 34.2257, lng: -77.9447, type: "expanded" },
+  { name: "Wilson", lat: 35.7206, lng: -77.9225, type: "expanded" },
+  { name: "Asheboro", lat: 35.7131, lng: -79.8109, type: "expanded" },
+  { name: "Greenville", lat: 35.6127, lng: -77.3663, type: "expanded" },
 ];
 
 export default function ServiceAreaMap() {
@@ -33,14 +44,23 @@ export default function ServiceAreaMap() {
 
     // Add markers for each service area
     SERVICE_AREAS.forEach((area) => {
-      const markerColor = area.type === "primary" ? "#D4AF37" : "#003D7A";
+      let markerColor = "#003D7A";
+      let markerScale = 8;
+      if (area.type === "primary") {
+        markerColor = "#D4AF37";
+        markerScale = 12;
+      } else if (area.type === "expanded") {
+        markerColor = "#6B8E23";
+        markerScale = 7;
+      }
+      
       const marker = new window.google.maps.Marker({
         position: { lat: area.lat, lng: area.lng },
         map: map,
         title: area.name,
         icon: {
           path: window.google.maps.SymbolPath.CIRCLE,
-          scale: area.type === "primary" ? 12 : 8,
+          scale: markerScale,
           fillColor: markerColor,
           fillOpacity: 0.9,
           strokeColor: "#ffffff",
@@ -69,11 +89,11 @@ export default function ServiceAreaMap() {
     new window.google.maps.Polygon({
       paths: serviceAreaBounds,
       geodesic: true,
-      strokeColor: "#D4AF37",
-      strokeOpacity: 0.3,
-      strokeWeight: 2,
-      fillColor: "#D4AF37",
-      fillOpacity: 0.08,
+            strokeColor: "#D4AF37",
+            strokeOpacity: 0.2,
+            strokeWeight: 1,
+            fillColor: "#D4AF37",
+            fillOpacity: 0.05,
       map: map,
     });
   };
@@ -99,7 +119,7 @@ export default function ServiceAreaMap() {
             className="text-lg max-w-2xl"
             style={{ color: "oklch(0.40 0.03 80)", fontFamily: "Inter, sans-serif" }}
           >
-            From Raleigh to Durham, Chapel Hill to Cary, and beyond. Click on any city marker to see if we serve your neighborhood.
+            Serving North Carolina from the Triangle to the Piedmont, Coastal Plains, and Eastern regions. Click on any city marker to see if we serve your neighborhood.
           </p>
         </div>
 
@@ -108,8 +128,8 @@ export default function ServiceAreaMap() {
           {/* Map */}
           <div className="lg:col-span-2">
             <MapView
-              initialCenter={{ lat: 35.8801, lng: -78.7880 }}
-              initialZoom={10}
+              initialCenter={{ lat: 35.5, lng: -78.5 }}
+              initialZoom={7}
               onMapReady={handleMapReady}
               className="rounded-lg shadow-lg"
             />
@@ -149,12 +169,34 @@ export default function ServiceAreaMap() {
               >
                 Also Serving
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2 mb-6">
                 {SERVICE_AREAS.filter((a) => a.type === "secondary").map((area) => (
                   <div key={area.name} className="flex items-center gap-2 text-sm">
                     <MapPin
                       size={14}
                       style={{ color: "oklch(0.72 0.16 70)", flexShrink: 0 }}
+                    />
+                    <span
+                      style={{ color: "oklch(0.40 0.03 80)", fontFamily: "Inter, sans-serif" }}
+                    >
+                      {area.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div
+                className="text-sm font-bold tracking-widest uppercase mb-4"
+                style={{ color: "oklch(0.20 0.12 260)", fontFamily: "Oswald, sans-serif" }}
+              >
+                Expanded Service Areas
+              </div>
+              <div className="space-y-2">
+                {SERVICE_AREAS.filter((a) => a.type === "expanded").map((area) => (
+                  <div key={area.name} className="flex items-center gap-2 text-sm">
+                    <MapPin
+                      size={14}
+                      style={{ color: "#6B8E23", flexShrink: 0 }}
                     />
                     <span
                       style={{ color: "oklch(0.40 0.03 80)", fontFamily: "Inter, sans-serif" }}
