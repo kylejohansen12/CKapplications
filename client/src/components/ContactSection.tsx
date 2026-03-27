@@ -120,8 +120,8 @@ export default function ContactSection() {
                 <ContactItem
                   icon={Phone}
                   label="Phone"
-                  value="(831) 588-1034"
-                  href="tel:+18315881034"
+                  value="(919) 621-5375"
+                  href="tel:+19196215375"
                 />
                 <ContactItem
                   icon={Mail}

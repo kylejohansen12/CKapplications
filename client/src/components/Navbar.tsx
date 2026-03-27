@@ -72,7 +72,7 @@ export default function Navbar() {
           style={{ fontFamily: "Inter, sans-serif" }}
         >
           <Phone size={13} />
-          <span>(831) 588-1034</span>
+          <span>(919) 621-5375</span>
         </a>
         <span className="mx-3 opacity-40">|</span>
         <span>Serving Raleigh, Durham, Chapel Hill & the Triangle Area</span>

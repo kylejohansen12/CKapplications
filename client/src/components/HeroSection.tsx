@@ -158,7 +158,7 @@ export default function HeroSection() {
               <ArrowRight size={16} />
             </button>
             <a
-              href="tel:+18315881034"
+              href="tel:+19196215375"
               className="flex items-center gap-2 px-7 py-3.5 rounded font-semibold text-sm transition-all hover:bg-white/20"
               style={{
                 border: "2px solid rgba(255,255,255,0.6)",

@@ -136,12 +136,12 @@ export default function Footer() {
             </p>
             <div className="space-y-2">
               <a
-                href="tel:+19195550100"
+                href="tel:+19196215375"
                 className="flex items-center gap-2 text-sm hover:opacity-80 transition-opacity"
                 style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Inter, sans-serif" }}
               >
                 <Phone size={13} />
-                (831) 588-1034
+                (919) 621-5375
               </a>
               <a
                 href="mailto:info@ckapplications.com"
