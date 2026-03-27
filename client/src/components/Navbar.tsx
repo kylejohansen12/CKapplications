@@ -32,6 +32,7 @@ const navLinks = [
       { label: "Roof Coatings", href: "#commercial" },
     ],
   },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
@@ -50,8 +51,12 @@ export default function Navbar() {
   const handleNavClick = (href: string) => {
     setIsOpen(false);
     setOpenDropdown(null);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("/")) {
+      window.location.href = href;
+    } else {
+      const el = document.querySelector(href);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
