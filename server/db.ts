@@ -136,3 +136,70 @@ export async function updateQuoteStatus(quoteId: number, status: "new" | "contac
     throw error;
   }
 }
+
+export async function getQuotesAnalytics() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get analytics: database not available");
+    return null;
+  }
+
+  try {
+    const allQuotes = await db.select().from(quotes);
+    
+    // Calculate status distribution
+    const statusCounts = {
+      new: allQuotes.filter(q => q.status === 'new').length,
+      contacted: allQuotes.filter(q => q.status === 'contacted').length,
+      completed: allQuotes.filter(q => q.status === 'completed').length,
+    };
+
+    // Calculate service distribution
+    const serviceCounts: Record<string, number> = {};
+    allQuotes.forEach(q => {
+      if (q.serviceType) {
+        serviceCounts[q.serviceType] = (serviceCounts[q.serviceType] || 0) + 1;
+      }
+    });
+
+    // Calculate property type distribution
+    const propertyTypeCounts: Record<string, number> = {};
+    allQuotes.forEach(q => {
+      if (q.propertyType) {
+        propertyTypeCounts[q.propertyType] = (propertyTypeCounts[q.propertyType] || 0) + 1;
+      }
+    });
+
+    // Calculate conversion rate
+    const totalQuotes = allQuotes.length;
+    const completedQuotes = statusCounts.completed;
+    const conversionRate = totalQuotes > 0 ? ((completedQuotes / totalQuotes) * 100).toFixed(1) : '0';
+
+    // Get quotes by date (last 30 days)
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    
+    const quotesByDate: Record<string, number> = {};
+    allQuotes
+      .filter(q => q.createdAt && new Date(q.createdAt) >= thirtyDaysAgo)
+      .forEach(q => {
+        const dateStr = q.createdAt ? new Date(q.createdAt).toISOString().split('T')[0] : '';
+        if (dateStr) {
+          quotesByDate[dateStr] = (quotesByDate[dateStr] || 0) + 1;
+        }
+      });
+
+    return {
+      totalQuotes,
+      statusCounts,
+      serviceCounts,
+      propertyTypeCounts,
+      conversionRate,
+      quotesByDate,
+      recentQuotes: allQuotes.slice(-5).reverse(),
+    };
+  } catch (error) {
+    console.error("[Database] Failed to get analytics:", error);
+    throw error;
+  }
+}

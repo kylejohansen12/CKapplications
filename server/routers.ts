@@ -3,7 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { z } from "zod";
-import { createQuote, getAllQuotes, updateQuoteStatus } from "./db";
+import { createQuote, getAllQuotes, updateQuoteStatus, getQuotesAnalytics } from "./db";
 import { notifyOwner } from "./_core/notification";
 
 export const appRouter = router({
@@ -94,6 +94,9 @@ Please follow up with the customer as soon as possible.`;
           throw new Error("Failed to update quote status");
         }
       }),
+    analytics: publicProcedure.query(async () => {
+      return await getQuotesAnalytics();
+    }),
   }),
 });
 

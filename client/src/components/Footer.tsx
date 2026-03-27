@@ -73,7 +73,7 @@ export default function Footer() {
               Get Free Quote
             </button>
             <a
-              href="tel:+19195550100"
+              href="tel:+19196215375"
               className="flex items-center gap-2 px-6 py-3 rounded font-semibold text-sm transition-all hover:bg-black/10"
               style={{
                 border: "2px solid oklch(0.20 0.12 260)",
