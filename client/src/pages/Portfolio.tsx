@@ -44,6 +44,24 @@ const projects: Project[] = [
     beforeImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663480175209/Z8aDEYZdckM2rAVWwdtYui/project-3-before-KgLVAy3KiWTCCgFYVHxKGy.webp",
     afterImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663480175209/Z8aDEYZdckM2rAVWwdtYui/project-3-after-kmzizy6Y9cYYTvGPjQgaWT.webp",
   },
+  {
+    id: 4,
+    title: "Commercial Silicone Roof Coating",
+    description: "Professional silicone coating system applied to deteriorated commercial flat roof. Extends roof life and improves energy efficiency.",
+    category: "commercial",
+    service: "Roof Coating",
+    beforeImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663480175209/Z8aDEYZdckM2rAVWwdtYui/project-4-before-NNVwKDxaLbcaWjLXPHuk4S.webp",
+    afterImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663480175209/Z8aDEYZdckM2rAVWwdtYui/project-4-after-TkvHJuUnXzxSCjAW5WysDW.webp",
+  },
+  {
+    id: 5,
+    title: "Residential Home Pressure Washing",
+    description: "Complete exterior pressure washing transformation. Removed algae, stains, and mold from vinyl siding. Home restored to like-new condition.",
+    category: "residential",
+    service: "Pressure Washing",
+    beforeImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663480175209/Z8aDEYZdckM2rAVWwdtYui/project-5-before-Jj88m4gKSXLL2JtGBwfq6J.webp",
+    afterImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663480175209/Z8aDEYZdckM2rAVWwdtYui/project-5-after-caG7Wz6R4DVi3jPQCkUExW.webp",
+  },
 ];
 
 export default function Portfolio() {
