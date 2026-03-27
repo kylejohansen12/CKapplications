@@ -105,7 +105,7 @@ export default function ServiceAreaMap() {
         <div className="mb-12">
           <div
             className="text-sm font-bold tracking-widest uppercase mb-3"
-            style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Oswald, sans-serif" }}
+            style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
           >
             Service Coverage
           </div>
@@ -152,7 +152,7 @@ export default function ServiceAreaMap() {
                   <div key={area.name} className="flex items-center gap-2">
                     <MapPin
                       size={16}
-                      style={{ color: "oklch(0.45 0.15 260)", flexShrink: 0 }}
+                      style={{ color: "oklch(0.72 0.16 70)", flexShrink: 0 }}
                     />
                     <span
                       style={{ color: "oklch(0.20 0.12 260)", fontFamily: "Inter, sans-serif" }}
@@ -174,7 +174,7 @@ export default function ServiceAreaMap() {
                   <div key={area.name} className="flex items-center gap-2 text-sm">
                     <MapPin
                       size={14}
-                      style={{ color: "oklch(0.45 0.15 260)", flexShrink: 0 }}
+                      style={{ color: "oklch(0.72 0.16 70)", flexShrink: 0 }}
                     />
                     <span
                       style={{ color: "oklch(0.40 0.03 80)", fontFamily: "Inter, sans-serif" }}
@@ -218,7 +218,7 @@ export default function ServiceAreaMap() {
                   Don't see your area? <strong>Call us</strong> at{" "}
                   <a
                     href="tel:+19196215375"
-                    style={{ color: "oklch(0.45 0.15 260)" }}
+                    style={{ color: "oklch(0.72 0.16 70)" }}
                     className="hover:underline"
                   >
                     (919) 621-5375

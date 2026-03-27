@@ -79,10 +79,10 @@ export default function TestimonialsSection() {
           className={`mb-14 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.45 0.15 260)" }} />
+            <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               What Our Customers Say
             </span>
@@ -124,8 +124,8 @@ export default function TestimonialsSection() {
                   <Star
                     key={j}
                     size={14}
-                    fill="oklch(0.45 0.15 260)"
-                    style={{ color: "oklch(0.45 0.15 260)" }}
+                    fill="oklch(0.72 0.16 70)"
+                    style={{ color: "oklch(0.72 0.16 70)" }}
                   />
                 ))}
               </div>

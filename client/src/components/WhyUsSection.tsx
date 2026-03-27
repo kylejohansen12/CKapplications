@@ -75,14 +75,14 @@ export default function WhyUsSection() {
           className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.45 0.15 260)" }} />
+            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               Our Process
             </span>
-            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.45 0.15 260)" }} />
+            <div className="w-8 h-0.5 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
           </div>
           <h2
             className="font-bold leading-tight text-white"
@@ -123,7 +123,7 @@ export default function WhyUsSection() {
                   style={{
                     fontFamily: "Oswald, sans-serif",
                     fontSize: "3rem",
-                    color: "oklch(0.45 0.15 260)",
+                    color: "oklch(0.72 0.16 70)",
                     lineHeight: 1,
                   }}
                 >
@@ -134,7 +134,7 @@ export default function WhyUsSection() {
                   className="w-12 h-12 rounded flex items-center justify-center mb-4"
                   style={{ backgroundColor: "oklch(0.68 0.18 65 / 0.15)" }}
                 >
-                  <Icon size={22} style={{ color: "oklch(0.45 0.15 260)" }} />
+                  <Icon size={22} style={{ color: "oklch(0.72 0.16 70)" }} />
                 </div>
 
                 <h3

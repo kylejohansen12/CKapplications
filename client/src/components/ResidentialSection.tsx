@@ -91,7 +91,7 @@ export default function ResidentialSection() {
             <div className="w-1 h-8 rounded" style={{ backgroundColor: "oklch(0.72 0.16 70)" }} />
             <span
               className="text-sm font-semibold tracking-widest uppercase"
-              style={{ color: "oklch(0.45 0.15 260)", fontFamily: "Oswald, sans-serif" }}
+              style={{ color: "oklch(0.72 0.16 70)", fontFamily: "Oswald, sans-serif" }}
             >
               For Homeowners
             </span>
@@ -192,7 +192,7 @@ export default function ResidentialSection() {
               onClick={scrollToContact}
               className="w-full py-3 rounded font-semibold text-sm transition-all hover:shadow-lg hover:-translate-y-0.5"
               style={{
-                backgroundColor: "oklch(0.45 0.15 260)",
+                backgroundColor: "oklch(0.72 0.16 70)",
                 color: "oklch(0.12 0.02 255)",
                 fontFamily: "Oswald, sans-serif",
                 letterSpacing: "0.08em",
@@ -294,7 +294,7 @@ function ServiceImageCard({
       )}
       <div className="p-5">
         <div className="flex items-center gap-2 mb-2">
-          <Icon size={16} style={{ color: "oklch(0.45 0.15 260)" }} />
+          <Icon size={16} style={{ color: "oklch(0.72 0.16 70)" }} />
           <h3
             className="font-bold"
             style={{
