@@ -56,6 +56,7 @@
   --color-brand-blue: oklch(0.28 0.12 260);
   --color-brand-blue-bright: oklch(0.45 0.15 260);
   --color-brand-blue-light: oklch(0.65 0.10 260);
+  --color-brand-gold: oklch(0.72 0.16 70);
   --color-brand-white: oklch(1 0 0);
 }
 

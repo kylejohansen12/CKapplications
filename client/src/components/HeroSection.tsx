@@ -125,7 +125,7 @@ export default function HeroSection() {
             style={{ transitionDelay: "0.4s" }}
           >
             {highlights.map((h) => (
-              <div key={h} className="flex items-center gap-2">
+              <div key={h} className="flex items-center gap-2 px-3 py-1 rounded" style={{ borderLeft: "3px solid oklch(0.72 0.16 70)" }}>
                 <CheckCircle2 size={16} style={{ color: "oklch(0.45 0.15 260)" }} />
                 <span
                   className="text-sm text-white/90"

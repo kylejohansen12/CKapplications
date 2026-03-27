@@ -97,6 +97,7 @@ export default function Navbar() {
               color: "oklch(0.15 0.02 255)",
               fontFamily: "Oswald, sans-serif",
               letterSpacing: "-0.05em",
+              border: "2px solid oklch(0.72 0.16 70)",
             }}
           >
             CK
