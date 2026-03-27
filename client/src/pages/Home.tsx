@@ -11,6 +11,7 @@ import WhyUsSection from "@/components/WhyUsSection";
 import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
+import ServiceAreaMap from "@/components/ServiceAreaMap";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <WhyUsSection />
         <AboutSection />
         <TestimonialsSection />
+        <ServiceAreaMap />
         <ContactSection />
       </main>
       <Footer />
